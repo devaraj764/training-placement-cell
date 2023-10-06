@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Language Proficiency",
+        "data": [
+            {
+                "name": "English",
+                "level": "Beginner"
+            },
+            {
+                "name": "Hindi",
+                "level": "Beginner"
+            },
+            {
+                "name": "Telugu",
+                "level": "Beginner"
+            }
+        ]
+    },
+    {
+        "title": "Problem Solving Skills",
+        "level": "Beginner"
+    },
+    {
+        "title": "Decision Making Skills",
+        "level": "Beginner"
+    },
+    {
+        "title": "Leadership Skills",
+        "level": "Beginner"
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "title": "Programming Languages",
+        "data": [
+            {
+                "name": "Java",
+                "level": "Beginner"
+            },
+            {
+                "name": "Python",
+                "level": "Beginner"
+            },
+            {
+                "name": "C++",
+                "level": "Beginner"
+            },
+            {
+                "name": "C",
+                "level": "Beginner"
+            }
+        ]
+    },
+    {
+        "title": "Technologies",
+        "data": [
+            {
+                "name": "Web Development",
+                "tools": "",
+                "level": "Beginner"
+            },
+            {
+                "name": "Mobile App Development",
+                "tools": "",
+                "level": "Beginner"
+            },
+            {
+                "name": "Data Science",
+                "tools": "",
+                "level": "Beginner"
+            }
+        ]
+    },
+    {
+        "title": "Subjects",
+        "data": [
+            {
+                "name": "Operating System",
+                "description": ""
+            },
+            {
+                "name": "Design and analysis of algorithms",
+                "description": ""
+            },
+            {
+                "name": "Compiler Design",
+                "description": ""
+            },
+            {
+                "name": "Data Structures",
+                "description": ""
+            }
+        ]
+    }
+]

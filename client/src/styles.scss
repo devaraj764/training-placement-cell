@@ -1,0 +1,618 @@
+// font-family: 'Nunito Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+@font-face {
+  font-family: "Averta Std";
+  src: url("assets/fonts/AvertaStd-Regular.ttf");
+}
+
+$primary-color: #625bf6;
+$secondary-color: #6b818b;
+$text-color: #3c4852;
+
+/* make the customizations */
+body {
+  overflow-x: hidden;
+  font-family: "Averta Std", sans-serif;
+  font-size: 14px !important;
+  color: $text-color;
+  overflow-x: hidden;
+
+  input,select,textarea{
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    &:focus{
+      border: 0.1em solid $secondary-color !important;
+      box-shadow: 0 0 0 0.25rem #6b818b3a !important;
+    }
+  }
+
+  .accordion-button:focus {
+    box-shadow: 0 0 1px 2px #6b818b85 !important;
+    background-color: rgb(250, 250, 250);
+    color: $text-color;
+  }
+  .accordion-button:not(.collapsed) {
+    box-shadow: 0 0 1px 2px #6b818b85 !important;
+    background-color: rgb(250, 250, 250);
+  }
+
+  .btn {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #c8c8c8;
+    border-radius: 10px;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+  }
+  .btn-primary {
+    background-color: $text-color;
+    color: white;
+    border: none;
+    &:hover {
+      background-color: #2b3846;
+    }
+    &:focus {
+      background-color: #2b3846;
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+  }
+  .btn-outline-primary {
+    border: 1px solid $text-color;
+    color: $text-color;
+    &:hover {
+      background-color: #2b384615;
+      color: $text-color;
+      border: 1px solid $text-color;
+    }
+    &:focus {
+      background-color: #2b38466f;
+      outline: none;
+    }
+  }
+  .btn-light {
+    background-color: #fff;
+    color: $text-color;
+  }
+
+  .TPC_Team {
+    background-color: #e3e4e4;
+    .card {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin: 30px;
+      border-radius: 0px;
+      p {
+        margin: 5px;
+        color: $secondary-color;
+      }
+      .heading {
+        font-size: 16px;
+        font-weight: bold;
+        font-size: 30px;
+        color: $primary-color;
+      }
+      .sub-heading {
+        font-size: 14px;
+        font-weight: bold;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .Home {
+    min-height: 100vh;
+    height: 100%;
+    .right-side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      .banner-title {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        @media (max-width: 768px) {
+          font-size: 35px;
+        }
+        @media (max-width: 576px) {
+          font-size: 28px;
+        }
+      }
+      .banner-sub {
+        font-size: 26px;
+        color: $secondary-color;
+        text-align: center;
+        @media (max-width: 768px) {
+          font-size: 22px;
+        }
+        @media (max-width: 576px) {
+          font-size: 18px;
+        }
+      }
+      .title {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: bold;
+        color: $primary-color;
+      }
+      .inputField {
+        max-width: 400px;
+        text-align: center;
+      }
+      button {
+        min-width: 200px;
+        margin: 0 10px;
+        border-radius: 10px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      & {
+        padding: 10px;
+      }
+      .left-side {
+        display: none;
+      }
+      .right-side {
+        justify-content: flex-start;
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .Register {
+    min-height: 100vh;
+    background-image: linear-gradient(90deg, #071a84, #314dea);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      min-height: 50vh;
+      max-width: 756px;
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: $primary-color;
+      }
+    }
+  }
+  footer {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: $secondary-color;
+    text-align: center !important;
+    width: 100% !important;
+    p {
+      @media (max-width: 576px) {
+        font-size: 12px;
+      }
+    }
+    a {
+      text-decoration: none !important;
+      color: $primary-color !important;
+      font-weight: bold !important;
+    }
+  }
+  .Dashboard {
+    min-height: 100vh;
+    padding-top: 50px;
+
+    .card {
+      border-radius: 10px;
+      border: 1px solid #c8c8c8;
+      // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .heading {
+      font-size: 26px !important;
+      font-weight: 900;
+      margin: 0;
+      margin-left: 10px;
+    }
+    .message {
+      font-size: 12px !important;
+      color: #6b818b;
+      margin-left: 10px;
+    }
+    .navbar {
+      background-color: #fff;
+      border-bottom: 0.5px solid #c8c8c8;
+      .title {
+        font-size: 22px !important;
+        color: $text-color !important;
+        font-weight: 600;
+      }
+      .nav-link {
+        font-size: 14px;
+        padding: 10px 20px;
+        color: rgb(184, 183, 183);
+        &:active,
+        &:focus {
+          color: $primary-color !important;
+        }
+        &:hover {
+          color: gray !important;
+        }
+      }
+    }
+
+    // profile page
+    .profile {
+      margin-top: 50px;
+      .nav-pills .nav-link {
+        color: $secondary-color;
+      }
+      .nav-pills .nav-link.active {
+        background-color: $text-color;
+        color: white;
+      }
+      .sub-heading {
+        font-size: 16px;
+        font-weight: bold;
+        color: $secondary-color;
+      }
+      .profile-banner {
+        margin-bottom: 30px;
+        border: 1px solid #c8c8c8;
+        padding: 20px;
+        border-radius: 10px;
+        .profileImage {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin: 0 10px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        button {
+          min-width: 150px !important;
+          margin: 10px;
+          border-radius: 10px;
+        }
+      }
+      .personal-details,
+      .Projects {
+        margin-top: 50px;
+        .label {
+          color: $secondary-color;
+        }
+      }
+      .educational-details {
+        margin-top: 50px;
+      }
+      .Skills {
+        margin-top: 50px;
+        input,
+        select,
+        textarea {
+          // box-shadow: #959da533 0px 2px 6px;
+          border: 1px solid #c8c8c8 !important;
+        }
+        .softSkill {
+          display: flex;
+          border: 1px solid #dfdfdf;
+          padding: 5px;
+          p {
+            width: 85%;
+            font-size: 1rem;
+            align-items: center;
+            margin-left: 10px;
+            margin-top: 15px;
+          }
+        }
+        .skill {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          margin-top: 10px;
+          .skillVal {
+            max-width: 120px;
+          }
+        }
+      }
+      .SocialMedia,
+      .Hobbies {
+        margin-top: 50px;
+        .linkField {
+          margin: 10px 0;
+          a {
+            color: $secondary-color;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 300px;
+            @media (max-width: 768px) {
+              max-width: 200px;
+            }
+          }
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    // updates
+    .Notifications {
+      padding-top: 50px;
+      .notifier {
+        min-height: 80px;
+        border-radius: 10px;
+        border: 1px solid #c8c8c8;
+        // flex-wrap: nowrap;
+        // box-shadow: #959da533 0px 8px 24px;
+        .notifier-typo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 80px;
+          height: 100%;
+          // border-top-left-radius: 10px;
+          // border-bottom-left-radius: 10px;
+        }
+        .notifier-body {
+          height: auto;
+          cursor: pointer;
+          .title {
+            font-size: 14px;
+            font-weight: 600;
+          }
+          .description {
+            font-size: 14px;
+            color: grey;
+          }
+          p {
+            margin: 5px 0px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+
+    .Home {
+      padding: 50px 0;
+      a {
+        text-decoration: none;
+      }
+      .box {
+        border: 1px solid #c8c8c8;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        .list-group-item {
+          color: $secondary-color;
+          margin: 10px;
+          border: none;
+          font-weight: 600;
+          .externalicon {
+            color: $primary-color;
+            margin-left: 10px;
+          }
+          a {
+            text-decoration: none;
+            color: $secondary-color;
+          }
+        }
+      }
+      .view-profile-banner {
+        background-color: #e8e7fa;
+        padding: 10px;
+        margin: 20px auto;
+        margin-bottom: 40px;
+        border-radius: 10px;
+        a {
+          margin: 0;
+          text-align: center;
+          color: $primary-color;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+      .header {
+        padding: 0 10px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid #c8c8c8;
+        .Title {
+          width: 100%;
+          text-align: center;
+          font-size: 26px;
+          margin: 10px 0;
+          span {
+            font-size: 46px;
+            font-weight: 700;
+          }
+        }
+        button {
+          border-radius: 25px;
+          font-size: 14px;
+          padding: 5px 10px;
+          min-width: 130px;
+          background-color: $text-color;
+          font-family: "Nunito Sans", sans-serif;
+        }
+      }
+    }
+
+    .Internships {
+      margin-top: 50px;
+    }
+    .Certifications {
+      margin-top: 50px;
+    }
+    .Achievements {
+      margin-top: 50px;
+    }
+  }
+
+  // view profile
+  .download-resume {
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+  .view-profile {
+    min-height: 100vh;
+    padding: 30px;
+    padding-bottom: 0px;
+    // @media (max-width: 576px) {
+    //   display: none;
+    // }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      .header-right {
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 10%;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+      }
+      .header-left {
+        .user-name {
+          font-size: 28px;
+          font-weight: 600;
+          color: $text-color;
+          text-decoration: underline;
+          text-decoration-color: $primary-color;
+          text-decoration-thickness: 5px;
+        }
+        p {
+          margin: 5px 0;
+          color: $secondary-color;
+        }
+      }
+    }
+    main {
+      margin-top: 30px;
+      .section {
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 450px 1fr auto;
+        @media (max-width: 992px) {
+          grid-template-columns: 300px 1fr auto;
+        }
+        // @media (max-width: 576px) {
+        //   grid-template-columns: auto;
+        // }
+        .section-title {
+          max-width: 450px;
+          margin-right: 20px;
+          width: 100%;
+          .heading {
+            font-size: 16px;
+            font-weight: 600;
+            color: $text-color;
+            text-transform: uppercase;
+          }
+        }
+        .description {
+          color: $secondary-color;
+          .sub-heading {
+            font-size: 14px;
+            font-weight: 600;
+            color: $text-color;
+          }
+        }
+      }
+      p {
+        margin: 5px 0;
+      }
+    }
+  }
+
+  //page not found
+  .page-not-found {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-weight: bold;
+      font-size: 30px;
+      font-family: "Nunito", sans-serif;
+    }
+  }
+
+  .Toast {
+    .modal-content {
+      // background-color: #fff;
+      color: $text-color;
+      border-radius: 10px;
+      border: none;
+    }
+  }
+  .preview-unavailable {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  // Admin
+  .Admin {
+    .StudentList-Table {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    .view-unavailable {
+      text-align: center;
+      color: $secondary-color;
+      font-size: 16px;
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+    .card {
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      max-height: 100px;
+      height: 100%;
+      text-decoration: none;
+      .inernal-row {
+        height: 100%;
+      }
+    }
+    .card:hover {
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    p {
+      margin: 0;
+    }
+    .heading {
+      font-size: 16px;
+      font-weight: bold;
+      color: $primary-color;
+    }
+    .sub-heading {
+      font-size: 12px;
+      color: $secondary-color;
+    }
+    .form-control,
+    select {
+      border-radius: 10px;
+      background-color: rgb(236, 237, 238) !important;
+      border: 1px solid #c8c8c8 !important;
+    }
+  }
+}
+
+// @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap&&family=Nunito&display=swap ");

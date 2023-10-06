@@ -1,0 +1,582 @@
+@font-face {
+  font-family: "Averta Std";
+  src: url("assets/fonts/AvertaStd-Regular.ttf");
+}
+/* make the customizations */
+body {
+  overflow-x: hidden;
+  font-family: "Averta Std", sans-serif;
+  font-size: 14px !important;
+  color: #3c4852;
+  overflow-x: hidden;
+}
+body input, body select, body textarea {
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+body input:focus, body select:focus, body textarea:focus {
+  border: 0.1em solid #6b818b !important;
+  box-shadow: 0 0 0 0.25rem rgba(107, 129, 139, 0.2274509804) !important;
+}
+body .accordion-button:focus {
+  box-shadow: 0 0 1px 2px rgba(107, 129, 139, 0.5215686275) !important;
+  background-color: rgb(250, 250, 250);
+  color: #3c4852;
+}
+body .accordion-button:not(.collapsed) {
+  box-shadow: 0 0 1px 2px rgba(107, 129, 139, 0.5215686275) !important;
+  background-color: rgb(250, 250, 250);
+}
+body .btn {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid #c8c8c8;
+  border-radius: 10px;
+}
+body .btn:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+body .btn-primary {
+  background-color: #3c4852;
+  color: white;
+  border: none;
+}
+body .btn-primary:hover {
+  background-color: #2b3846;
+}
+body .btn-primary:focus {
+  background-color: #2b3846;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+body .btn-outline-primary {
+  border: 1px solid #3c4852;
+  color: #3c4852;
+}
+body .btn-outline-primary:hover {
+  background-color: rgba(43, 56, 70, 0.0823529412);
+  color: #3c4852;
+  border: 1px solid #3c4852;
+}
+body .btn-outline-primary:focus {
+  background-color: rgba(43, 56, 70, 0.4352941176);
+  outline: none;
+}
+body .btn-light {
+  background-color: #fff;
+  color: #3c4852;
+}
+body .TPC_Team {
+  background-color: #e3e4e4;
+}
+body .TPC_Team .card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 30px;
+  border-radius: 0px;
+}
+body .TPC_Team .card p {
+  margin: 5px;
+  color: #6b818b;
+}
+body .TPC_Team .card .heading {
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #625bf6;
+}
+body .TPC_Team .card .sub-heading {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6b818b;
+}
+body .Home {
+  min-height: 100vh;
+  height: 100%;
+}
+body .Home .right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+body .Home .right-side .banner-title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  body .Home .right-side .banner-title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 576px) {
+  body .Home .right-side .banner-title {
+    font-size: 28px;
+  }
+}
+body .Home .right-side .banner-sub {
+  font-size: 26px;
+  color: #6b818b;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  body .Home .right-side .banner-sub {
+    font-size: 22px;
+  }
+}
+@media (max-width: 576px) {
+  body .Home .right-side .banner-sub {
+    font-size: 18px;
+  }
+}
+body .Home .right-side .title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  color: #625bf6;
+}
+body .Home .right-side .inputField {
+  width: 500px;
+  width: 100%;
+  text-align: center;
+}
+body .Home .right-side button {
+  min-width: 200px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  body .Home {
+    padding: 10px;
+  }
+  body .Home .left-side {
+    display: none;
+  }
+  body .Home .right-side {
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
+}
+body .Register {
+  min-height: 100vh;
+  background-image: linear-gradient(90deg, #071a84, #314dea);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .Register .card {
+  min-height: 50vh;
+  max-width: 756px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+body .Register .card .title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #625bf6;
+}
+body footer {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  color: #6b818b;
+  text-align: center !important;
+  width: 100% !important;
+}
+@media (max-width: 576px) {
+  body footer p {
+    font-size: 12px;
+  }
+}
+body footer a {
+  text-decoration: none !important;
+  color: #625bf6 !important;
+  font-weight: bold !important;
+}
+body .Dashboard {
+  min-height: 100vh;
+  padding-top: 50px;
+}
+body .Dashboard .card {
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+}
+body .Dashboard .heading {
+  font-size: 26px !important;
+  font-weight: 900;
+  margin: 0;
+  margin-left: 10px;
+}
+body .Dashboard .message {
+  font-size: 12px !important;
+  color: #6b818b;
+  margin-left: 10px;
+}
+body .Dashboard .navbar {
+  background-color: #fff;
+  border-bottom: 0.5px solid #c8c8c8;
+}
+body .Dashboard .navbar .title {
+  font-size: 22px !important;
+  color: #3c4852 !important;
+  font-weight: 600;
+}
+body .Dashboard .navbar .nav-link {
+  font-size: 14px;
+  padding: 10px 20px;
+  color: rgb(184, 183, 183);
+}
+body .Dashboard .navbar .nav-link:active, body .Dashboard .navbar .nav-link:focus {
+  color: #625bf6 !important;
+}
+body .Dashboard .navbar .nav-link:hover {
+  color: gray !important;
+}
+body .Dashboard .profile {
+  margin-top: 50px;
+}
+body .Dashboard .profile .nav-pills .nav-link {
+  color: #6b818b;
+}
+body .Dashboard .profile .nav-pills .nav-link.active {
+  background-color: #3c4852;
+  color: white;
+}
+body .Dashboard .profile .sub-heading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #6b818b;
+}
+body .Dashboard .profile .profile-banner {
+  margin-bottom: 30px;
+  border: 1px solid #c8c8c8;
+  padding: 20px;
+  border-radius: 10px;
+}
+body .Dashboard .profile .profile-banner .profileImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+body .Dashboard .profile .profile-banner button {
+  min-width: 150px !important;
+  margin: 10px;
+  border-radius: 10px;
+}
+body .Dashboard .profile .personal-details,
+body .Dashboard .profile .Projects {
+  margin-top: 50px;
+}
+body .Dashboard .profile .personal-details .label,
+body .Dashboard .profile .Projects .label {
+  color: #6b818b;
+}
+body .Dashboard .profile .educational-details {
+  margin-top: 50px;
+}
+body .Dashboard .profile .Skills {
+  margin-top: 50px;
+}
+body .Dashboard .profile .Skills input,
+body .Dashboard .profile .Skills select,
+body .Dashboard .profile .Skills textarea {
+  border: 1px solid #c8c8c8 !important;
+}
+body .Dashboard .profile .Skills .softSkill {
+  display: flex;
+  border: 1px solid #dfdfdf;
+  padding: 5px;
+}
+body .Dashboard .profile .Skills .softSkill p {
+  width: 85%;
+  font-size: 1rem;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+body .Dashboard .profile .Skills .skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 10px;
+}
+body .Dashboard .profile .Skills .skill .skillVal {
+  max-width: 120px;
+}
+body .Dashboard .profile .SocialMedia,
+body .Dashboard .profile .Hobbies {
+  margin-top: 50px;
+}
+body .Dashboard .profile .SocialMedia .linkField,
+body .Dashboard .profile .Hobbies .linkField {
+  margin: 10px 0;
+}
+body .Dashboard .profile .SocialMedia .linkField a,
+body .Dashboard .profile .Hobbies .linkField a {
+  color: #6b818b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300px;
+}
+@media (max-width: 768px) {
+  body .Dashboard .profile .SocialMedia .linkField a,
+  body .Dashboard .profile .Hobbies .linkField a {
+    max-width: 200px;
+  }
+}
+body .Dashboard .profile .SocialMedia .linkField i,
+body .Dashboard .profile .Hobbies .linkField i {
+  margin-right: 10px;
+}
+body .Dashboard .Notifications {
+  padding-top: 50px;
+}
+body .Dashboard .Notifications .notifier {
+  min-height: 80px;
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+}
+body .Dashboard .Notifications .notifier .notifier-typo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  height: 100%;
+}
+body .Dashboard .Notifications .notifier .notifier-body {
+  height: auto;
+  cursor: pointer;
+}
+body .Dashboard .Notifications .notifier .notifier-body .title {
+  font-size: 14px;
+  font-weight: 600;
+}
+body .Dashboard .Notifications .notifier .notifier-body .description {
+  font-size: 14px;
+  color: grey;
+}
+body .Dashboard .Notifications .notifier .notifier-body p {
+  margin: 5px 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+body .Dashboard .Home {
+  padding: 50px 0;
+}
+body .Dashboard .Home a {
+  text-decoration: none;
+}
+body .Dashboard .Home .box {
+  border: 1px solid #c8c8c8;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+body .Dashboard .Home .box .list-group-item {
+  color: #6b818b;
+  margin: 10px;
+  border: none;
+  font-weight: 600;
+}
+body .Dashboard .Home .box .list-group-item .externalicon {
+  color: #625bf6;
+  margin-left: 10px;
+}
+body .Dashboard .Home .box .list-group-item a {
+  text-decoration: none;
+  color: #6b818b;
+}
+body .Dashboard .Home .view-profile-banner {
+  background-color: #e8e7fa;
+  padding: 10px;
+  margin: 20px auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+body .Dashboard .Home .view-profile-banner a {
+  margin: 0;
+  text-align: center;
+  color: #625bf6;
+  font-size: 15px;
+  font-weight: 600;
+}
+body .Dashboard .Home .header {
+  padding: 0 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+}
+body .Dashboard .Home .header .Title {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  margin: 10px 0;
+}
+body .Dashboard .Home .header .Title span {
+  font-size: 46px;
+  font-weight: 700;
+}
+body .Dashboard .Home .header button {
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 5px 10px;
+  min-width: 130px;
+  background-color: #3c4852;
+  font-family: "Nunito Sans", sans-serif;
+}
+body .Dashboard .Internships {
+  margin-top: 50px;
+}
+body .Dashboard .Certifications {
+  margin-top: 50px;
+}
+body .Dashboard .Achievements {
+  margin-top: 50px;
+}
+@media (max-width: 576px) {
+  body .download-resume {
+    display: none;
+  }
+}
+body .view-profile {
+  min-height: 100vh;
+  padding: 30px;
+  padding-bottom: 0px;
+}
+body .view-profile .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+body .view-profile .header .header-right img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+body .view-profile .header .header-left .user-name {
+  font-size: 28px;
+  font-weight: 600;
+  color: #3c4852;
+  text-decoration: underline;
+  text-decoration-color: #625bf6;
+  text-decoration-thickness: 5px;
+}
+body .view-profile .header .header-left p {
+  margin: 5px 0;
+  color: #6b818b;
+}
+body .view-profile main {
+  margin-top: 30px;
+}
+body .view-profile main .section {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 450px 1fr auto;
+}
+@media (max-width: 992px) {
+  body .view-profile main .section {
+    grid-template-columns: 300px 1fr auto;
+  }
+}
+body .view-profile main .section .section-title {
+  max-width: 450px;
+  margin-right: 20px;
+  width: 100%;
+}
+body .view-profile main .section .section-title .heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3c4852;
+  text-transform: uppercase;
+}
+body .view-profile main .section .description {
+  color: #6b818b;
+}
+body .view-profile main .section .description .sub-heading {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3c4852;
+}
+body .view-profile main p {
+  margin: 5px 0;
+}
+body .page-not-found {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .page-not-found p {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Nunito", sans-serif;
+}
+body .Toast .modal-content {
+  color: #3c4852;
+  border-radius: 10px;
+  border: none;
+}
+body .preview-unavailable {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  body .Admin .StudentList-Table {
+    display: none;
+  }
+}
+body .Admin .view-unavailable {
+  text-align: center;
+  color: #6b818b;
+  font-size: 16px;
+  display: none;
+}
+@media (max-width: 768px) {
+  body .Admin .view-unavailable {
+    display: block;
+  }
+}
+body .Admin .card {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  max-height: 100px;
+  height: 100%;
+  text-decoration: none;
+}
+body .Admin .card .inernal-row {
+  height: 100%;
+}
+body .Admin .card:hover {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+body .Admin p {
+  margin: 0;
+}
+body .Admin .heading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #625bf6;
+}
+body .Admin .sub-heading {
+  font-size: 12px;
+  color: #6b818b;
+}
+body .Admin .form-control,
+body .Admin select {
+  border-radius: 10px;
+  background-color: rgb(236, 237, 238) !important;
+  border: 1px solid #c8c8c8 !important;
+}/*# sourceMappingURL=styles.css.map */
